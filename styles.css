@@ -1,19 +1,24 @@
+:root {
+    --primary: #DD946F ;
+    --secondary: #261E5A;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--primary);
+    font-family: Mulish;
+}
+#headerContainer {
+    background-color: var(--secondary);
+}
 /* body{
     max-width: 1500px;
 } */
-.card {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    /* margin: 10px; */
-    text-align: center;
-    width: 100%;
-}
 
 .owl-carousel {
     display: flex;
