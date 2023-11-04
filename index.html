@@ -22,17 +22,18 @@
 </head>
 
 <body>
-  <!-- fixed-top -->
+  <!-- header -->
   <div class="fixed-top" id="headerContainer">
     <header
-      class=" container navbar navbar-expand-md d-flex flex-wrap align-items-center justify-content-between py-3 ">
-      <div class="col-12 col-md-3 mb-2 mb-md-0 d-flex align-items-center justify-content-between">
+      class=" container navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center py-3 ">
+      <div class="col-10 col-sm-12 col-md-12 col-lg-3 mb-2 mb-md-0 d-flex align-items-center justify-content-between">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none text-light">
           logo
         </a>
 
-        <button style="background: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button style="background: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -61,25 +62,26 @@
               <a class="nav-link" href="#">FAQs</a>
             </li>
           </ul>
-          <div class="col-12 col-md-3 text-center  justify-content-center d-block d-md-none">
+          <div class="col-12 col-md-3 text-center  justify-content-center d-block d-lg-none">
             <button type="button" class="btn btn-outline-primary me-2">Login</button>
             <button type="button" class="btn btn-primary">Sign-up</button>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-3 text-end  justify-content-end d-none d-md-block">
+      <div class="col-12 col-md-3 text-end  justify-content-end d-none d-lg-block">
         <button type="button" class="btn btn-outline-primary me-2">Login</button>
         <button type="button" class="btn btn-primary">Sign-up</button>
       </div>
     </header>
   </div>
 
+  <!-- landing page -->
   <div class="px-4 py-5  text-center full-height-div blurry-background">
     <div class="background-overlay"></div>
     <div class="text-overlay col-10 col-lg-9">
       <p class="display-2 lead mb-4 learn-online">Learn Online</p>
-      <h1 class="display-1 fw-bold bold-text">improving your skills is<br> now much easier</h1>
+      <h1 class="display-1 fw-bold bold-text">improving your skills is<br class="d-none d-lg-block"> now much easier</h1>
       <div class="col-5 col-lg-6 mx-auto">
 
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -89,17 +91,18 @@
     </div>
   </div>
 
+  <!-- about -->
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-12  col-lg-6">
         <img src="GettyImages-1203183653.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-          height="500" loading="lazy">
+          height="500" loading="lazy" style="border-radius: 10px;">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Start Learning with Greysville Design Now</h1>
-        <p class="lead">Our courses have been put into 5 categories. We have courses for 
-          designers at beginners, intermediate, advanced, bridal mastery level and luxurywedding 
-          dress making asides the various single courses you can take.all easy to understand, 
+        <p class="lead">Our courses have been put into 5 categories. We have courses for
+          designers at beginners, intermediate, advanced, bridal mastery level and luxurywedding
+          dress making asides the various single courses you can take.all easy to understand,
           simplified and yet detailed
         </p>
         <div class="d-grid gap-2 d-flex justify-content-md-start col-lg-12">
@@ -110,74 +113,77 @@
     </div>
   </div>
 
-  <div class="my-5 container">
-    <h1 class="py-5 text-center">Courses Available</h1>
+  <!-- available courses/ carousel -->
+  <div class="pt-3 pb-5" style="background-color: #cccccc;">
+    <h1 class="container py-4 text-center fw-bold display-4">Courses Available</h1>
     <div class="container owl-carousel owl-theme owl-loaded">
       <div class="owl-stage-outer">
         <div class="owl-stage">
-          <article class="owl-item">
+          <article class="owl-item" style="border-radius: 10px;">
             <figure>
-              <img
-                src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
-                alt="Preview">
+              <a href="">
+                <img
+                  src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
+                  alt="Preview">
                 <div class="courseOnCarousel">
                   Beginners Course
                 </div>
+              </a>
             </figure>
           </article>
 
-          <article class="owl-item">
+          <article class="owl-item" style="border-radius: 10px;">
             <figure>
               <img
                 src="https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=900&t=st=1687123407~exp=1687124007~hmac=15a1b5a4d3a5af66dfba67bdcd577f769f813bf06fc8b5e50f32f6503099bbd8"
                 alt="Preview">
-                <div class="courseOnCarousel">
-                  intermediate Course
-                </div>
+              <div class="courseOnCarousel">
+                intermediate Course
+              </div>
             </figure>
           </article>
 
-          <article class="owl-item">
+          <article class="owl-item" style="border-radius: 10px;">
             <figure>
               <img
                 src="https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?w=1800&t=st=1687169672~exp=1687170272~hmac=b66f9b9c1e344cbfe6fe2e5f65e94ebb8d418dad2e2af2b892ad9ac60e9eb79c"
                 alt="Preview">
-                 <div class="courseOnCarousel">
-                  Masters Course
-                </div>
+              <div class="courseOnCarousel">
+                Masters Course
+              </div>
             </figure>
           </article>
 
-          <article class="owl-item">
+          <article class="owl-item" style="border-radius: 10px;">
             <figure>
               <img
                 src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
                 alt="Preview">
-                 <div class="courseOnCarousel">
-                  bridal Course
-                </div>
+              <div class="courseOnCarousel">
+                bridal Course
+              </div>
             </figure>
           </article>
 
-          <article class="owl-item">
+          <article class="owl-item" style="border-radius: 10px;">
             <figure>
               <img
                 src="https://img.freepik.com/free-photo/empty-wood-chair-table-outdoor-patio-with-beautiful-tropical-beach-sea_74190-9961.jpg?w=1800&t=st=1687169720~exp=1687170320~hmac=0a77994214a9019510f28af43dab452ada527e96585d6e7f563a09995598851e"
                 alt="Preview">
-                 <div class="courseOnCarousel">
-                  Greysville Course
-                </div>
+              <div class="courseOnCarousel">
+                Greysville Course
+              </div>
             </figure>
           </article>
 
-          <article class="owl-item">
+          <article class="owl-item" style="border-radius: 10px;">
             <figure>
               <img
                 src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b"
                 alt="Preview">
-                 <div class="courseOnCarousel">
-                  Grace Course
-                </div>
+              <div class="courseOnCarousel">
+                Grace Course
+              </div>
             </figure>
           </article>
         </div>
@@ -185,21 +191,65 @@
     </div>
   </div>
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <!-- contact details -->
+  <div class="footerBgColor py-4 text-white">
+    <div class="container d-flex mb-5">
+      <img class="me-5" style="border-radius: 20px;" src="sfd-site-social-image.jpg" height="50px" width="80px">
+      <h5 class="my-auto ms-5">Start learning from our experts and enhance your skills</h5>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 border-bottom py-3">
+          <h3>Email</h3>
+          <div class="d-flex align-items-center mt-4">
+            <i style="font-size: 40px;" class="fa fa-envelope me-3"></i>
+            <div class="">
+              <h5 class="mt-auto">Send Email</h5>
+              <p class="mb-auto">onoja@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 border-bottom py-3">
+          <h3>Instagram</h3>
+          <div class="d-flex align-items-center mt-4">
+            <i style="font-size: 40px;" class="fa fa-instagram me-3"></i>
+            <div class="">
+              <h5 class="mt-auto">Check us out on IG</h5>
+              <p class="mb-auto">Greysville</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 border-bottom py-3">
+          <h3>Phone Number</h3>
+          <div class="d-flex align-items-center mt-4">
+            <i style="font-size: 40px;" class="fa fa-phone me-3"></i>
+            <div class="">
+              <h5 class="mt-auto">Call Us</h5>
+              <p class="mb-auto">+234 123456789</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footerBgColor pb-3">
+    <footer class=" container d-flex flex-wrap justify-content-between align-items-center py-3">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <img src="">logo
+          <img src="">
         </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+        <span class="mb-3 mb-md-0 text-white">Logo © 2023 Company, Inc</span>
       </div>
 
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <li class="ms-3"><a class="text-body-primary" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         </li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <li class="ms-3"><a class="text-body-primary" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <li class="ms-3"><a class="text-body-primary" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </li>
       </ul>
     </footer>

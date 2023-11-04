@@ -1,5 +1,5 @@
 :root {
-    --primary: #DD946F ;
+    --primary: rgba(0, 0, 0, 0.3) ;
     --secondary: #261E5A;
 }
 
@@ -10,10 +10,12 @@
 }
 
 body {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     font-family: Mulish;
 }
-
+#headerContainer {
+    background-color: var(--secondary);
+}
 .background {
     width: 100%;
     display: flex;

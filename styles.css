@@ -10,10 +10,13 @@
 }
 
 body {
-    background-color: var(--primary);
+    background-color: white;
     font-family: Mulish;
 }
 #headerContainer {
+    background-color: var(--secondary);
+}
+.footerBgColor {
     background-color: var(--secondary);
 }
 /* body{
@@ -109,8 +112,26 @@ body {
     margin-left: 10px;
     cursor: pointer;
     display: none;
-  }
-  
+}
+article {
+    /* max-width: 320px; */
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 16px;
+}
+article figure {
+    width: 100%;
+    height: 100%;
+}
+figure img {
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
 .courseOnCarousel {
     position: absolute; 
     left: 10%; 
@@ -122,4 +143,5 @@ body {
     color: white; 
     height: fit-content; 
     background-color: gold;
+    cursor: pointer;
 }
