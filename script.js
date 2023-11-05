@@ -16,8 +16,8 @@ $('.owl-carousel').on('mouseenter', '.owl-item', function () {
         margin:10,
         autoplay: true,
         autoplayHoverPause: true,
-        nav:true,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        // nav:true,
+        // navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
         responsive:{
             0:{
                 items:1

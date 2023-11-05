@@ -27,16 +27,13 @@ body {
     display: flex;
     flex-direction: row;
 }
-/* body{
-    background-color: rgba(0, 0, 0, 0.7);
-} */
+
+/* Landing Page*/
 .full-height-div {
     height: 100vh;
-    /* background-color: lightgray; */
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    /* color: white; */
 }
 .blurry-background {
     position: relative;
@@ -72,10 +69,7 @@ body {
     color: white;
     /* font-weight: bold;
     font-size: 60px; */
-}
-
-
-
+} 
 
 /* Style the left navigation arrow (initially hidden) */
 .owl-nav .owl-prev {
