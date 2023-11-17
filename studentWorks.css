@@ -1,6 +1,6 @@
 :root {
     --primary: rgba(0, 0, 0, 0.3) ;
-    --secondary: #261E5A;
+    --secondary: #1E152A; /*#261E5A */
 }
 
 * {
