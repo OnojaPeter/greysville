@@ -37,8 +37,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    overflow: hidden;
 }
-.blurry-background {
+/* .blurry-background {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -49,7 +50,7 @@ body {
     background-size: cover;
     transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(0deg);
-}
+} */
 #image-to-flip {
     width: 100%;
     height: 100vh;
