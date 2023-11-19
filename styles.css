@@ -159,3 +159,9 @@ figure img {
     background-color: gold;
     cursor: pointer;
 }
+
+@media (max-width: 991.98px) {
+    .header-list li a {
+        color: #000;
+    }
+}
