@@ -52,6 +52,9 @@ body {
   transform: perspective(1000px) rotateY(0deg);
 } */
 #image-to-flip {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -66,7 +69,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5 = 50%) */
 }
 .text-overlay {
