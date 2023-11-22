@@ -80,7 +80,7 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
     color: #ffffff;
-    display: block;
+    display: inline-block;
     height: 50px;
     font-size: 1.3em;
     font-weight: 600;
