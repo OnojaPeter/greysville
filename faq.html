@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faq.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <!-- <script src="https://kit.fontawesome.com/64af63ddf7.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>faq</title>
+</head>
+<body>
+
+
+ <div class="hero3">
+    
+    <h1 class="hero3-h1-div">FAQ</h1>
+    
+    <div class="question-div">
+        <div class="question-class">
+            <div class="question-plus-minus">
+                <h2>Question 1</h2>
+                <i class="plus fa fa-plus" id="plus1"></i>
+                <i class="minus fa fa-minus" id="minus1"></i>
+            </div>
+            <p class="content" id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas.</p>
+        </div>
+        <div class="question-class">
+            <div class="question-plus-minus">
+                <h2>Question 2</h2>
+                <i class="plus fa fa-plus" id="plus1"></i>
+                <i class="minus fa fa-minus" id="minus1"></i>
+            </div>
+            <p class="content" id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas.</p>
+        </div>
+        <div class="question-class">
+            <div class="question-plus-minus">
+                <h2>Question 3</h2>
+                <i class="plus fa fa-plus" id="plus1"></i>
+                <i class="minus fa fa-minus" id="minus1"></i>
+            </div>
+            <p class="content" id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas.</p>
+        </div>
+        <div class="question-class">
+            <div class="question-plus-minus">
+                <h2>Question 4</h2>
+                <i class="plus fa fa-plus" id="plus1"></i>
+                <i class="minus fa fa-minus" id="minus1"></i>
+            </div>
+            <p class="content" id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas.</p>
+        </div>
+        <div class="question-class">
+            <div class="question-plus-minus">
+                <h2>Question 5</h2>
+                <i class="plus fa fa-plus" id="plus1"></i>
+                <i class="minus fa fa-minus" id="minus1"></i>
+            </div>
+            <p class="content" id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas.</p>
+        </div>
+    </div>
+ </div>
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script>
+    let plus = document.getElementById("plus1");
+let content = document.getElementById("text");
+let minus = document.getElementById("minus1");
+let allPlus = document.getElementsByClassName('plus')
+let arrayPlus = document.querySelectorAll('.plus')
+let arrayContent = document.querySelectorAll('.content')
+let arrayMinus = document.querySelectorAll('.minus') 
+
+
+
+
+console.log(arrayPlus);
+console.log(arrayContent);
+console.log(arrayMinus);
+
+arrayPlus.forEach((plusqq, index) => {
+    console.log({ plusqq });
+    console.log(index);
+    plusqq.addEventListener("click", () => {
+        if (arrayContent[index].style.display !="flex"){
+            arrayContent[index].style.display = "flex";
+            arrayMinus[index].style.display ="flex"
+            plusqq.style.display = "none"
+          } else {
+            arrayContent[index].style.display = "none";
+            arrayMinus[index].style.display ="none"
+          }
+    });
+    
+});
+
+arrayMinus.forEach((minusqq, index) =>{
+    minusqq.addEventListener("click", () => {
+        if (arrayContent[index].style.display !="none"){
+            arrayContent[index].style.display = "none";
+            minusqq.style.display ="none"
+            arrayPlus[index].style.display = "block"
+          } 
+    });
+})
+
+ </script>
+</body>

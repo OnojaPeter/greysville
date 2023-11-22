@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--primary);
+    background-color: #FFFFF0;
     font-family: Mulish;
 }
 #headerContainer {
@@ -64,6 +64,6 @@ body {
     object-fit: cover;
 }
 
-.articles article:hover img {
+/* .articles article:hover img {
     transform: scale(1.5); 
-}
+} */
