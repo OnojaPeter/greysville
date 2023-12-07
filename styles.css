@@ -210,8 +210,8 @@ figure img {
 }
 .six-things-div ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
     gap: 5vh;
     margin-top: 3vh;
     list-style: lower-roman;
