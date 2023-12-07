@@ -1,3 +1,17 @@
+const hamburgerButton = document.getElementById('hamburgerButton');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeBtn = document.getElementById('closeBtn');
+
+hamburgerButton.addEventListener('click', () => {
+    // alert("working")
+    mobileMenu.classList.toggle("hidden");
+});
+closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
+
+
 $('.owl-carousel').on('mouseenter', '.owl-item', function () {
     // Show the left navigation arrow on hover
     $(this).closest('.owl-carousel').find('.owl-prev').show();
