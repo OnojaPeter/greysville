@@ -94,6 +94,9 @@ body {
   border: 1px solid var(--primary-blue);
   background: #F7FAFF;
 }
+.pricing-card:hover {
+  background: white;
+}
 
 .pricing-card--primary {
   background: white;
