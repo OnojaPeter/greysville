@@ -49,7 +49,7 @@ body {
     rgba(96, 93, 255, 0.1) 0%,
     rgba(96, 93, 255, 0) 100%
   );
-  padding-top: 180px;
+  /* padding-top: 180px; */
   min-height: 100vh;
   height: 100%;
 }

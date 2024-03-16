@@ -161,6 +161,20 @@ body {
     background-color: #0056b3; 
   }
   
+  .gradient-text {
+    background-image: linear-gradient(
+      90.65deg, 
+      #605DFF 41.17%, 
+      #AD63F6 92.13%
+    );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+  
   /* Style the right navigation arrow (visible by default) */
   .owl-nav .owl-next {
     position: absolute;
