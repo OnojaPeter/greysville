@@ -9,9 +9,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFFFF0;
     font-family: Mulish;
+}
+.main-max-width {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* mobile navigation */
 .mobileMenu {
@@ -200,7 +208,7 @@ figure img {
     border-bottom-right-radius: 10px;
     color: white; 
     height: fit-content; 
-    background-color: gold;
+    background-color: #4F46E5;
     cursor: pointer;
 }
 
