@@ -112,13 +112,10 @@ body {
     box-sizing: border-box;
     color: #ffffff;
     display: inline-block;
-    height: 50px;
-    font-size: 1.3em;
     font-weight: 600;
     padding: 4px;
     position: relative;
     text-decoration: none;
-    width: 8em;
     z-index: 2;
   }
   
