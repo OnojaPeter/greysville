@@ -191,7 +191,7 @@ body {
     cursor: pointer;
     display: none;
 }
-article {
+.article {
     /* max-width: 320px; */
     height: 250px;
     cursor: pointer;
@@ -199,16 +199,16 @@ article {
     display: block;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
-    border-radius: 16px;
+    /* border-radius: 16px; */
 }
-article figure {
+.article figure {
     width: 100%;
     height: 100%;
 }
-figure img {
+.article figure img {
     height: 100%;
     cursor: pointer;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     object-fit: cover;
     /* object-position: start; */
 }
