@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+footer a {
+  font-weight: 400;
+  color: #fff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex; /* Ensures the text stays in one line */
+  animation: marquee 15s linear infinite; /* Adjust speed with the '10s' */
+  /* width: 220%; */width: max-content;
+  gap: 1rem
+}
+
+/* Responsive font sizes */
+.animate-marquee span {
+  white-space: nowrap; 
+  font-size: 5vw; /* Use viewport width for scaling text */
+}
+footer .animate-marquee span {
+  white-space: nowrap; 
+  font-size: 3vw; /* Use viewport width for scaling text */
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .animate-marquee span {
+    font-size: 5vw; 
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .animate-marquee span {
+    font-size: 6vw; 
+  }
+}
+
+
+.line-height {
+  /* font-size: 4.2em; */
+  line-height: 1.1;
+}
+
+/* Change pagination dots color */
+.swiper-pagination-bullet {
+  background: #ffffff; /* White color for the pagination dots */
+  opacity: 0.7; /* Slightly transparent */
+  /* height: 20px;
+  width: 20px */
+}
+@media (min-width: 600px) {
+  .swiper-pagination-bullet {
+    background: #ffffff; /* White color for the pagination dots */
+    opacity: 0.7; /* Slightly transparent */
+    height: 15px;
+    width: 15px
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #000; /* Highlight color for the active pagination dot */
+}
+
+/* Customize navigation arrows color */
+.swiper-button-next, .swiper-button-prev {
+  color: #ffffff; /* White color for the navigation arrows */
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
