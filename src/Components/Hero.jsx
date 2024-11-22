@@ -14,7 +14,7 @@ const Hero = () => {
                 <div className='text-white relative hidden md:flex place-items-end flex-col md:mx-28 '>
                     <div className='max-w-xs'>
                         <h3 className='uppercase font-medium'>we're in nigeria <br /> we're global</h3>
-                        <p className='text-xs md:text-base'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, minus? Earum, ex dolores. Dicta esse consectetur qua repudiandae maiores, consectetur officia?</p>
+                        <p className='text-xs md:text-base'>Celebrating creativity and craftsmanship, we specialize in bespoke fashion design and nurturing the next generation of designers through our academy.</p>
                     </div>
                 </div>
                 <div className='uppercase text-white absolute w-full'>

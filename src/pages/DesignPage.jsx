@@ -1,4 +1,5 @@
 import Card from "../Components/reuseables/Card"
+import { Link } from "react-router-dom"
 
 const images = [
     { image: 'img_2.webp', name: '' },
@@ -47,10 +48,10 @@ const DesignPage = () => {
                 <h2 className="text-xl md:text-3xl font-bold text-center text-neutral-200">Our Creations</h2>
                 <Card products={images} />
                 <div className="text-center">
-                    <button
+                    <Link to='/gallery/design'
                         className="px-6 py-3 bg-neutral-900 text-white rounded-lg hover:bg-neutral-700 transition duration-300">
                         View More Designs
-                    </button>
+                    </Link>
                 </div>
             </section>
 

@@ -1,15 +1,13 @@
-import { BrowserRouter as Router, Route, Routes, Outlet } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Outlet, Navigate } from "react-router-dom";
 
 import LandingPage from './pages/LandingPage'
 import FaqsPage from "./pages/FaqsPage";
 import DesignPage from "./pages/DesignPage";
 import AcademyPage from "./pages/AcademyPage";
-import Gallery from "./pages/Gallery";
+import GalleryPage from "./pages/GalleryPage";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-
-
-// import PageTop from "./components/PageTop"; utils
+import PageTop from "./Components/PageTop";
 
 // Layout Component
 const Layout = () => {
@@ -20,6 +18,7 @@ const Layout = () => {
           <main>
               <Outlet /> {/* This renders the child routes */}
           </main>
+          <PageTop />
           <Footer />
       </>
   );
@@ -37,7 +36,8 @@ function App() {
                 <Route path="/faqs" element={<FaqsPage />} />
                 <Route path="/design" element={<DesignPage />} />
                 <Route path="/academy" element={<AcademyPage />} />
-                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/gallery/:type" element={<GalleryPage />} />
+                <Route path="/gallery" element={<Navigate to="/gallery/academy" replace />} />
 
             </Route>
         </Routes>
